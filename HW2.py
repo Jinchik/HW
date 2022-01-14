@@ -25,9 +25,7 @@ if oper == "+":
 else:
     print(num1 * num2 * num3)
 
-
 # 2 TASK
-
 
 
 num1 = int(input("Enter you're first number "))
@@ -41,33 +39,32 @@ if opera == 'Biggest':
         print(num3)
     elif num1 < num2 > num3:
         print(num2)
-    elif num1> num2 < num3:
+    elif num1 > num2 < num3:
         print(num3)
 elif opera == 'Lowest':
-     if num1 < num2 < num3:
-         print(num1)
-     elif num1 > num2 > num3:
-         print(num3)
-     elif num1 > num2 < num3:
-         print(num2)
-     elif num1< num2 > num3:
-         print(num3)
+    if num1 < num2 < num3:
+        print(num1)
+    elif num1 > num2 > num3:
+        print(num3)
+    elif num1 > num2 < num3:
+        print(num2)
+    elif num1 < num2 > num3:
+        print(num3)
 elif opera == 'Arithmetic mean':
     print((num1 + num2 + num3) / 3)
 else:
     print("Error")
 
-
-# Task 3
-
+Task
+3
 
 num1 = int(input("Enter amount of meters you want to convert "))
 opera = input("Please choose what you want to convert in: miles, inches, yards ")
 if opera == 'miles':
-    print(num1/1609)
+    print(num1 / 1609)
 elif opera == 'inches':
-    print(num1/0.0254)
+    print(num1 / 0.0254)
 elif opera == 'yards':
-    print((num1/0.9144))
+    print((num1 / 0.9144))
 else:
     print("Error")
