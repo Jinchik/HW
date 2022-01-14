@@ -13,8 +13,8 @@ end_of_hw=input(" That is the whole story, please press enter to exit, good luck
 #Создать программу которая при вводе данных в переменную метр преобразует его в фут, дюйм, милю и
 #литр в пинту, галлон, баррель.
 #С использованием данных результатов написать программу, которая выводит текст, по аналогии с тем, как делали на паре.
-meter=float(input("Hello, do you want some conversion? Ok, let's start with meter, how many meters do you want to be converted?  "))
-litre=float(input("Now it's time for litres "))
+meter=int(input("Hello, do you want some conversion? Ok, let's start with meter, how many meters do you want to be converted?  "))
+litre=int(input("Now it's time for litres "))
 foot=meter*0.3
 inch=foot/100*2.54
 mile=meter/1482
