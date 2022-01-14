@@ -20,7 +20,8 @@
 # ли эти числа, и, если нет, вывести их на экран в порядке
 # возрастания
 
-Task 4
+#Task 4
+
 
 
 weekd = int(input('Please enter a number of the day of the week '))
@@ -38,4 +39,38 @@ elif weekd == 6:
     print("It is Saturday, my friend :) ")
 elif weekd == 7:
     print("It is Sunday, my friend :D ")
+else:
+    print("Error")
 
+
+#Task 5
+
+
+
+month = int(input('Please enter a number of the month '))
+if month == 1:
+    print("It is January, it's freezing mate brrr ")
+elif month == 2:
+    print("It is February, still freezing wow! ")
+elif month == 3:
+    print("It is March, flowers are growing from the snow :/ ")
+elif month == 4:
+    print("It is April, look at the trees :! ")
+elif month == 5:
+    print("It is May, everything are green, wonderful ")
+elif month == 6:
+    print("It is June, great weather, time to swim!  :) ")
+elif month == 7:
+    print("It is July, wow it's really hot, we need to hide somewhere in shadow ")
+elif month == 8:
+    print("It is August, still hot, really hot, where is water ")
+elif month == 9:
+    print("It is Septeeber, time for school, universities and work, boooring ")
+elif month == 10:
+    print("It is October, yellow is the best color ")
+elif month == 11:
+    print("It is November, New Year is near ")
+elif month == 12:
+    print("It is December, How, how, how here comes the Santa! ")
+else:
+    print("Error")
