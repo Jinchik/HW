@@ -15,7 +15,9 @@
 
 
 # #1 TASK
-#
+
+
+
 # num1 = int(input("Enter yor first number "))
 # num2 = int(input("Enter yor second number "))
 # num3 = int(input("Enter yor third number "))
@@ -30,26 +32,30 @@
 
 
 
-
-num1 = int(input("Enter yor first number "))
-num2 = int(input("Enter yor second number "))
-num3 = int(input("Enter yor third number "))
-opera = input(f"Please choose 'Biggest', 'Lowest','Arithmetic mean' ")
-if opera == 'Biggest':
-    if num1 > num2 > num3:
-        print(num1)
-    elif num1 < num2 < num3:
-        print(num3)
-    elif num1<num2>num3:
-        print(num2)
-elif opera == 'Lowest':
-     if num1 < num2 < num3:
-         print(num1)
-     elif num1 > num2 > num3:
-         print(num3)
-     elif num1 > num2 < num3:
-         print(num2)
-elif opera == 'Arithmetic mean':
-    print((num1 + num2 + num3) / 3)
-else:
-    print("Error")
+#
+# num1 = int(input("Enter yor first number "))
+# num2 = int(input("Enter yor second number "))
+# num3 = int(input("Enter yor third number "))
+# opera = input(f"Please choose 'Biggest', 'Lowest','Arithmetic mean' ")
+# if opera == 'Biggest':
+#     if num1 > num2 > num3:
+#         print(num1)
+#     elif num1 < num2 < num3:
+#         print(num3)
+#     elif num1 < num2 > num3:
+#         print(num2)
+#     elif num1> num2 < num3:
+#         print(num3)
+# elif opera == 'Lowest':
+#      if num1 < num2 < num3:
+#          print(num1)
+#      elif num1 > num2 > num3:
+#          print(num3)
+#      elif num1 > num2 < num3:
+#          print(num2)
+#      elif num1< num2 > num3:
+#          print(num3)
+# elif opera == 'Arithmetic mean':
+#     print((num1 + num2 + num3) / 3)
+# else:
+#     print("Error")
