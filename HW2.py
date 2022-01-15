@@ -22,17 +22,19 @@ num3 = int(input("Enter yor third number "))
 oper = input("Please enter + or * ")
 if oper == "+":
     print(num1 + num2 + num3)
-else:
+elif oper == "*":
     print(num1 * num2 * num3)
+else:
+    print("Oops, you broke something")
 
-# 2 TASK
+# # 2 TASK
 
 
 num1 = int(input("Enter you're first number "))
 num2 = int(input("Enter you're second number "))
 num3 = int(input("Enter you're third number "))
-opera = input("Please choose 'Biggest', 'Lowest','Arithmetic mean' ")
-if opera == 'Biggest':
+opera = input("Please choose: You want the biggest number? Type b. Lowest? Type l. Arithmetic mean? Type a  ")
+if opera == 'b':
     if num1 > num2 > num3:
         print(num1)
     elif num1 < num2 < num3:
@@ -41,7 +43,7 @@ if opera == 'Biggest':
         print(num2)
     elif num1 > num2 < num3:
         print(num3)
-elif opera == 'Lowest':
+elif opera == 'l':
     if num1 < num2 < num3:
         print(num1)
     elif num1 > num2 > num3:
@@ -50,21 +52,22 @@ elif opera == 'Lowest':
         print(num2)
     elif num1 < num2 > num3:
         print(num3)
-elif opera == 'Arithmetic mean':
+elif opera == 'a':
     print((num1 + num2 + num3) / 3)
 else:
-    print("Error")
+    print("Oops, you broke something")
 
-Task
-3
+
+
+# Task 3
 
 num1 = int(input("Enter amount of meters you want to convert "))
-opera = input("Please choose what you want to convert in: miles, inches, yards ")
-if opera == 'miles':
+opera = input("Please choose what you want to convert in: m for Miles,i for Inches,y for Yards ")
+if opera == 'm':
     print(num1 / 1609)
-elif opera == 'inches':
+elif opera == 'i':
     print(num1 / 0.0254)
-elif opera == 'yards':
+elif opera == 'y':
     print((num1 / 0.9144))
 else:
-    print("Error")
+    print("Oops, you broke something")
