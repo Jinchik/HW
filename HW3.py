@@ -57,8 +57,6 @@ elif opera == 'a':
 else:
     print("Oops, you broke something")
 
-
-
 # Task 3
 
 num1 = int(input("Enter amount of meters you want to convert "))

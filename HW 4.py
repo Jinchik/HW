@@ -20,60 +20,87 @@
 # ли эти числа, и, если нет, вывести их на экран в порядке
 # возрастания
 
-#Task 4
-
-
-#
-# weekd = int(input('Please enter a number of the day of the week 1-7 '))
-# if weekd == 1:
-#     print("It is Monday, my friend :( ")
-# elif weekd == 2:
-#     print("It is Thuesday, my friend :\ ")
-# elif weekd == 3:
-#     print("It is Wednesday, my friend :/ ")
-# elif weekd == 4:
-#     print("It is Thursday, my friend :! ")
-# elif weekd == 5:
-#     print("It is Friday, my friend WEEEE ")
-# elif weekd == 6:
-#     print("It is Saturday, my friend :) ")
-# elif weekd == 7:
-#     print("It is Sunday, my friend :D ")
-# else:
-#     print("Error")
-
-
-#Task 5
+# Task 4
 
 
 
-# month = int(input('Please enter a number of the month 1-12 '))
-# if month == 1:
-#     print("It is January, it's freezing mate brrr ")
-# elif month == 2:
-#     print("It is February, still freezing wow! ")
-# elif month == 3:
-#     print("It is March, flowers are growing from the snow :/ ")
-# elif month == 4:
-#     print("It is April, look at the trees :! ")
-# elif month == 5:
-#     print("It is May, everything are green, wonderful ")
-# elif month == 6:
-#     print("It is June, great weather, time to swim!  :) ")
-# elif month == 7:
-#     print("It is July, wow it's really hot, we need to hide somewhere in shadow ")
-# elif month == 8:
-#     print("It is August, still hot, really hot, where is water ")
-# elif month == 9:
-#     print("It is Septeeber, time for school, universities and work, boooring ")
-# elif month == 10:
-#     print("It is October, yellow is the best color ")
-# elif month == 11:
-#     print("It is November, New Year is near ")
-# elif month == 12:
-#     print("It is December, How, how, how here comes the Santa! ")
-# else:
-#     print("Error")
+weekd = int(input('Please enter a number of the day of the week 1-7 '))
+if weekd == 1:
+    print("It is Monday, my friend :( ")
+elif weekd == 2:
+    print("It is Thuesday, my friend :\ ")
+elif weekd == 3:
+    print("It is Wednesday, my friend :/ ")
+elif weekd == 4:
+    print("It is Thursday, my friend :! ")
+elif weekd == 5:
+    print("It is Friday, my friend WEEEE ")
+elif weekd == 6:
+    print("It is Saturday, my friend :) ")
+elif weekd == 7:
+    print("It is Sunday, my friend :D ")
+else:
+    print("Error")
 
 
-#Task 6
+# Task 5
+
+
+month = int(input('Please enter a number of the month 1-12 '))
+if month == 1:
+    print("It is January, it's freezing mate brrr ")
+elif month == 2:
+    print("It is February, still freezing wow! ")
+elif month == 3:
+    print("It is March, flowers are growing from the snow :/ ")
+elif month == 4:
+    print("It is April, look at the trees :! ")
+elif month == 5:
+    print("It is May, everything are green, wonderful ")
+elif month == 6:
+    print("It is June, great weather, time to swim!  :) ")
+elif month == 7:
+    print("It is July, wow it's really hot, we need to hide somewhere in shadow ")
+elif month == 8:
+    print("It is August, still hot, really hot, where is water ")
+elif month == 9:
+    print("It is September, time for school, universities and work, boooring ")
+elif month == 10:
+    print("It is October, yellow is the best color ")
+elif month == 11:
+    print("It is November, New Year is near ")
+elif month == 12:
+    print("It is December, How, how, how here comes the Santa! ")
+else:
+    print("Error")
+
+
+# Task 6
+
+
+
+num = int(input("Please, enter a number: "))
+if num > 0:
+    print("Good news my friend: Number is positive")
+elif num < 0:
+    print("Good news my friend: Number is negative")
+elif num == 0:
+    print("Good news my friend: Number is equal to zero")
+else:
+    print("Opps, something went wrong")
+
+
+
+#Task 7
+
+
+numb1 = int(input("Please enter your first number: "))
+numb2 = int(input("Please enter your second number: "))
+if numb1 == numb2:
+    print(f"Great news every one, your numbers are equals! {numb1} " "==" f" {numb2}")
+elif numb1 != numb2:
+    print("Bad news every one, your numbers are not equals ")
+    if numb1 < numb2:
+        print(f"This number {numb1} " f"is lower then {numb2}" " Pity!")
+    elif numb1 > numb2:
+        print(f"This number {numb2} " f"is lower then {numb1}" " Pity!")
