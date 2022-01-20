@@ -80,49 +80,49 @@
 # определить лучшего менеджера, начислить ему премию
 # 200$, вывести итоги на экран.
 
-
-finp = int(input("Enter the sales level of the 1 worker "))
-sinp = int(input("Enter the sales level of the 2 worker "))
-tinp = int(input("Enter the sales level of the 3 worker "))
-if finp <= 0 and finp != (1) and sinp <= 0 and sinp != (1) and tinp <= 0 and tinp != (1):
-    print("Incorrect value")
-if finp < 500:
-    f = ((finp * 3 / 100)+200)
-    print("1-t Seller has a low sales rate + salary = ", (finp * 3 / 100)+200)
-elif finp >= 500 and finp <= 1000:
-    f = ((finp * 5 / 100)+200)
-    print("1-t Seller has a midle sales rate + salary = ", (finp * 5 / 100)+200)
-elif finp > 1000:
-    f = ((finp * 8 / 100)+200)
-    print("1-t Seller has a high sales rate + salary = ", (finp * 8 / 100)+200)
-if sinp < 500:
-    s = ((sinp * 3 / 100)+200)
-    print("2-d Seller has a low sales rate + salary = ", (sinp * 3 / 100)+200)
-elif sinp >= 500 and sinp <= 1000:
-    s = ((sinp * 5 / 100)+200)
-    print("2-d Seller has a midle sales rate + salary = ", (sinp * 5 / 100)+200)
-elif sinp > 1000:
-    s = ((sinp * 8 / 100)+200)
-    print("2-d Seller has a high sales rate + salary = ", (sinp * 8 / 100)+200)
-if tinp < 500:
-    t = ((tinp * 3 / 100)+200)
-    print("3-d Seller has a low sales rate + salary = ", (tinp * 3 / 100)+200)
-elif tinp >= 500 and tinp <= 1000:
-    t = ((tinp * 5 / 100)+200)
-    print("3-d Seller has a midle sales rate + salary = ", (tinp * 5 / 100) +200)
-elif tinp > 1000:
-    t = ((tinp * 8 / 100)+200)
-    print("3-d Seller has a high sales rate + salary = ", (tinp * 8 / 100) +200)
-else:
-    print("Oops, you broke something")
-
-best_sales = f
-if s>f:
-    best_sales = s
-    print("Second Seller has the best Salary, and get 200 bonus to his salary ", best_sales + 200)
-elif t>f:
-    best_sales = t
-    print("Third Seller has the best Salary, and get 200 bonus to his salary ", best_sales + 200)
-else:
-    print("First Seller has the best Salary, and get 200 bonus to his salary ", best_sales + 200)
-
+#
+# finp = int(input("Enter the sales level of the 1 worker "))
+# sinp = int(input("Enter the sales level of the 2 worker "))
+# tinp = int(input("Enter the sales level of the 3 worker "))
+# if finp <= 0 and finp != (1) and sinp <= 0 and sinp != (1) and tinp <= 0 and tinp != (1):
+#     print("Incorrect value")
+# if finp < 500:
+#     f = ((finp * 3 / 100)+200)
+#     print("1-t Seller has a low sales rate + salary = ", (finp * 3 / 100)+200)
+# elif finp >= 500 and finp <= 1000:
+#     f = ((finp * 5 / 100)+200)
+#     print("1-t Seller has a midle sales rate + salary = ", (finp * 5 / 100)+200)
+# elif finp > 1000:
+#     f = ((finp * 8 / 100)+200)
+#     print("1-t Seller has a high sales rate + salary = ", (finp * 8 / 100)+200)
+# if sinp < 500:
+#     s = ((sinp * 3 / 100)+200)
+#     print("2-d Seller has a low sales rate + salary = ", (sinp * 3 / 100)+200)
+# elif sinp >= 500 and sinp <= 1000:
+#     s = ((sinp * 5 / 100)+200)
+#     print("2-d Seller has a midle sales rate + salary = ", (sinp * 5 / 100)+200)
+# elif sinp > 1000:
+#     s = ((sinp * 8 / 100)+200)
+#     print("2-d Seller has a high sales rate + salary = ", (sinp * 8 / 100)+200)
+# if tinp < 500:
+#     t = ((tinp * 3 / 100)+200)
+#     print("3-d Seller has a low sales rate + salary = ", (tinp * 3 / 100)+200)
+# elif tinp >= 500 and tinp <= 1000:
+#     t = ((tinp * 5 / 100)+200)
+#     print("3-d Seller has a midle sales rate + salary = ", (tinp * 5 / 100) +200)
+# elif tinp > 1000:
+#     t = ((tinp * 8 / 100)+200)
+#     print("3-d Seller has a high sales rate + salary = ", (tinp * 8 / 100) +200)
+# else:
+#     print("Oops, you broke something")
+#
+# best_sales = f
+# if s>f:
+#     best_sales = s
+#     print("Second Seller has the best Salary, and get 200 bonus to his salary ", best_sales + 200)
+# elif t>f:
+#     best_sales = t
+#     print("Third Seller has the best Salary, and get 200 bonus to his salary ", best_sales + 200)
+# else:
+#     print("First Seller has the best Salary, and get 200 bonus to his salary ", best_sales + 200)
+#
