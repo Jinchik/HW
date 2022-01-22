@@ -8,32 +8,32 @@
 # до 100 требуется вывести сообщение об ошибке.
 
 
-# num = int(input("Please enter a number from 1 to 100 "))
-# if num > 100 or num <= 0:
-#     print(f"Oh no, I asked you to enter between 1 and 100, and you entered {num}")
-# elif num % 3 != 0 and num % 5 != 0:
-#     print(num)
-# elif num % 3 == 0 and num % 5 == 0:
-#     print("Fizz Buzz")
-# elif num % 3 == 0:
-#     print("Fizz")
-# elif num % 5 == 0:
-#     print("Buzz")
-# else:
-#     print(("Unknown Error"))
-# end1 = input("Great, well dont, press enter to exit")
+num = int(input("Please enter a number from 1 to 100 "))
+if num > 100 or num <= 0:
+    print(f"Oh no, I asked you to enter between 1 and 100, and you entered {num}")
+elif num % 3 != 0 and num % 5 != 0:
+    print(num)
+elif num % 3 == 0 and num % 5 == 0:
+    print("Fizz Buzz")
+elif num % 3 == 0:
+    print("Fizz")
+elif num % 5 == 0:
+    print("Buzz")
+else:
+    print(("Unknown Error"))
+end1 = input("Great, well done, press enter to exit")
 
 # Задание 2
 # Написать программу, которая по выбору пользователя возводит введенное им число в степень от нулевой
 # до седьмой включительно.
 
 
-# num = int(input("Please enter the number "))
-# power = int(input("Please enter the power between 1 and 7 "))
-# if num > 0 and power >= 1 and power <= 7:
-#     print(f" {num} ** {power}  = " ,  num ** power)
-# else:
-#     print("You entered incorrect number or incorreect power ")
+num = int(input("Please enter the number "))
+power = int(input("Please enter the power between 0 and 7 "))
+if num > 0 and power >= 0 and power <= 7:
+    print(f" {num} ** {power}  = " ,  num ** power)
+else:
+    print("You entered incorrect number or incorreect power ")
 
 # Задание 3
 # Написать программу подсчета стоимости разговора
@@ -96,49 +96,49 @@ else:
 # определить лучшего менеджера, начислить ему премию
 # 200$, вывести итоги на экран.
 
-#
-# finp = int(input("Enter the sales level of the 1 worker "))
-# sinp = int(input("Enter the sales level of the 2 worker "))
-# tinp = int(input("Enter the sales level of the 3 worker "))
-# if finp <= 0 and finp != (1) and sinp <= 0 and sinp != (1) and tinp <= 0 and tinp != (1):
-#     print("Incorrect value")
-# if finp < 500:
-#     f = ((finp * 3 / 100)+200)
-#     print("1-t Seller has a low sales rate + salary = ", (finp * 3 / 100)+200)
-# elif finp >= 500 and finp <= 1000:
-#     f = ((finp * 5 / 100)+200)
-#     print("1-t Seller has a midle sales rate + salary = ", (finp * 5 / 100)+200)
-# elif finp > 1000:
-#     f = ((finp * 8 / 100)+200)
-#     print("1-t Seller has a high sales rate + salary = ", (finp * 8 / 100)+200)
-# if sinp < 500:
-#     s = ((sinp * 3 / 100)+200)
-#     print("2-d Seller has a low sales rate + salary = ", (sinp * 3 / 100)+200)
-# elif sinp >= 500 and sinp <= 1000:
-#     s = ((sinp * 5 / 100)+200)
-#     print("2-d Seller has a midle sales rate + salary = ", (sinp * 5 / 100)+200)
-# elif sinp > 1000:
-#     s = ((sinp * 8 / 100)+200)
-#     print("2-d Seller has a high sales rate + salary = ", (sinp * 8 / 100)+200)
-# if tinp < 500:
-#     t = ((tinp * 3 / 100)+200)
-#     print("3-d Seller has a low sales rate + salary = ", (tinp * 3 / 100)+200)
-# elif tinp >= 500 and tinp <= 1000:
-#     t = ((tinp * 5 / 100)+200)
-#     print("3-d Seller has a midle sales rate + salary = ", (tinp * 5 / 100) +200)
-# elif tinp > 1000:
-#     t = ((tinp * 8 / 100)+200)
-#     print("3-d Seller has a high sales rate + salary = ", (tinp * 8 / 100) +200)
-# else:
-#     print("Oops, you broke something")
-#
-# best_sales = f
-# if s>f:
-#     best_sales = s
-#     print("Second Seller has the best Salary, and get 200 bonus to his salary ", best_sales + 200)
-# elif t>f:
-#     best_sales = t
-#     print("Third Seller has the best Salary, and get 200 bonus to his salary ", best_sales + 200)
-# else:
-#     print("First Seller has the best Salary, and get 200 bonus to his salary ", best_sales + 200)
-#
+
+finp = int(input("Enter the sales level of the 1 worker "))
+sinp = int(input("Enter the sales level of the 2 worker "))
+tinp = int(input("Enter the sales level of the 3 worker "))
+if finp <= 0 and finp != (1) and sinp <= 0 and sinp != (1) and tinp <= 0 and tinp != (1):
+    print("Incorrect value")
+if finp < 500:
+    f = ((finp * 3 / 100)+200)
+    print("1-t Seller has a low sales rate + salary = ", (finp * 3 / 100)+200)
+elif finp >= 500 and finp <= 1000:
+    f = ((finp * 5 / 100)+200)
+    print("1-t Seller has a midle sales rate + salary = ", (finp * 5 / 100)+200)
+elif finp > 1000:
+    f = ((finp * 8 / 100)+200)
+    print("1-t Seller has a high sales rate + salary = ", (finp * 8 / 100)+200)
+if sinp < 500:
+    s = ((sinp * 3 / 100)+200)
+    print("2-d Seller has a low sales rate + salary = ", (sinp * 3 / 100)+200)
+elif sinp >= 500 and sinp <= 1000:
+    s = ((sinp * 5 / 100)+200)
+    print("2-d Seller has a midle sales rate + salary = ", (sinp * 5 / 100)+200)
+elif sinp > 1000:
+    s = ((sinp * 8 / 100)+200)
+    print("2-d Seller has a high sales rate + salary = ", (sinp * 8 / 100)+200)
+if tinp < 500:
+    t = ((tinp * 3 / 100)+200)
+    print("3-d Seller has a low sales rate + salary = ", (tinp * 3 / 100)+200)
+elif tinp >= 500 and tinp <= 1000:
+    t = ((tinp * 5 / 100)+200)
+    print("3-d Seller has a midle sales rate + salary = ", (tinp * 5 / 100) +200)
+elif tinp > 1000:
+    t = ((tinp * 8 / 100)+200)
+    print("3-d Seller has a high sales rate + salary = ", (tinp * 8 / 100) +200)
+else:
+    print("Oops, you broke something")
+
+best_sales = f
+if s>f:
+    best_sales = s
+    print("Second Seller has the best Salary, and get 200 bonus to his salary ", best_sales + 200)
+elif t>f:
+    best_sales = t
+    print("Third Seller has the best Salary, and get 200 bonus to his salary ", best_sales + 200)
+else:
+    print("First Seller has the best Salary, and get 200 bonus to his salary ", best_sales + 200)
+
