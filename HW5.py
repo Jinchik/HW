@@ -41,37 +41,53 @@
 # стоимость разговора и выбирает с какого на какой оператор он звонит. Вывести стоимость на экран.
 
 
-# Писал поздно, не правильно понял задание,не правильно задание понял. Решил не удалять, оставил этот вариант и правильный.
-
-
-# s = 1
-# m = s / 60
-# h = m / 60
-# coin = 1
-# hr = coin / 100
-# hrpm = m*hr
-# hrlc = hrpm + 0.1
-# hrmt = hrpm + 0.2
-# hrky = hrpm + 0.3
-
-# oper = (input("Please enter lifeCell, or mts or kyivstar "))
-# time = int(input("Please enter time in seconds "))
-# if oper != ("lifeCell" or "mts" or "kyivstar") and time <=0:
-#     print("Incorrect value was printed ")
-# elif oper == "lifeCell":
-#     print(time*m, "It's your time in minutes", time * h, "it's your time in hours", "price per one min on " , oper, "are ", hrlc,"in hrn" )
-# elif oper == "mts":
-#     print(time*m, "It's your time in minutes", time * h, "it's your time in hours. ", "Price per one min on " ,oper, "are ", hrmt, "in hrn" )
-# elif oper == "kyivstar":
-#     print(time*m, "It's your time in minutes", time * h, "it's your time in hours", "price per one min on " , oper, "are ", hrky, "in hrn" )
-# else:
-#     print("Unknown Error")
-# dif = input("Please enter two different operators to count the difference between their cost(Without spaces). Enter pleease l for lifeCell, and or m for mts and k or kyivstar ")
-# if dif != ("l m" or "m l" or "k m" or "m k" or "k l" or "l k"):
-#     print("Incorrect value was printed ")
-# elif dif == "l m" or dif == "m l":
-#     print(f"Mts is {hrlc - hrmt} cheaper ")
-
+pcost = int(input("Please enter the cost of phone call per minute "))
+if pcost > 0:
+    time = int(input("Please enter the please enter the time you have been speaking in seconds "))
+else:
+    print("I can't count anything, if you wont give me a numbers ")
+if time > 0:
+    oper1 = input(
+        "Please enter the what operator you calling from. Choose from this 3: Kyivstar == k, Lifecell == l, MTS == m : ")
+    oper2 = input(
+        "Please enter the what operator you calling calling to. Choose from this 3: Kyivstar == k, Lifecell == l, MTS == m : ")
+else:
+    print("So you haven't speak with anyone? ")
+sec = 60
+minu = time / 60
+hour = minu / 60
+oper_pricel = (pcost/sec)+(0.12*time)
+oper_pricek = (pcost/sec)+(0.13*time)
+oper_pricem = (pcost/sec)+(0.14*time)
+if oper1 == "l" and oper2 == "l":
+    print(
+        f"So you spoke {time} in seconds, {minu} in minutes, {hour} in hours. Price you inputed was {pcost} you called from Lifecell to Lifecell and price for this call with your operator will be free. Good luck ")
+elif oper1 == "l" and oper2 == "k":
+    print(
+        f"So you spoke {time} in seconds, {minu} in minutes, {hour} in hours. Price you inputed was {pcost} you called from Lifecell to Kyivstar and price for this call with your operator will be {oper_pricel}. Good luck ")
+elif oper1 == "l" and oper2 == "m":
+    print(
+        f"So you spoke {time} in seconds, {minu} in minutes, {hour} in hours. Price you inputed was {pcost} you called from Lifecell to MTS and price for this call with your operator will be {oper_pricel}. Good luck ")
+elif oper1 == "m" and oper2 == "l":
+    print(
+        f"So you spoke {time} in seconds, {minu} in minutes, {hour} in hours. Price you inputed was {pcost} you called from MTS to Kyivstar and price for this call with your operator will be {oper_pricem}. Good luck ")
+elif oper1 == "m" and oper2 == "k":
+    print(
+        f"So you spoke {time} in seconds, {minu} in minutes, {hour} in hours. Price you inputed was {pcost} you called from MTS to Lifecell and price for this call with your operator will be {oper_pricem}. Good luck ")
+elif oper1 == "m" and oper2 == "m":
+    print(
+        f"So you spoke {time} in seconds, {minu} in minutes, {hour} in hours. Price you inputed was {pcost} you called from MTS to MTS and price for this call with your operator will be free. Good luck ")
+elif oper1 == "k" and oper2 == "l":
+    print(
+        f"So you spoke {time} in seconds, {minu} in minutes, {hour} in hours. Price you inputed was {pcost} you called from Kyivstar to Lifecell and price for this call with your operator will be {oper_pricek}. Good luck ")
+elif oper1 == "k" and oper2 == "m":
+    print(
+        f"So you spoke {time} in seconds, {minu} in minutes, {hour} in hours. Price you inputed was {pcost} you called from Kyivstar to MTS and price for this call with your operator will be {oper_pricek}. Good luck ")
+elif oper1 == "k" and oper2 == "k":
+    print(
+        f"So you spoke {time} in seconds, {minu} in minutes, {hour} in hours. Price you inputed was {pcost*time} you called from Kyivstar to Kyivstar and price for this call with your operator will be free. Good luck ")
+else:
+    print("Woops, you broke something ")
 
 # Задание 4
 # Зарплата менеджера составляет 200$ + процент от продаж, продажи до 500$ — 3%, от 500 до 1000 — 5%, свыше
