@@ -3,14 +3,14 @@
 # числа в этом диапазоне по следующему правилу: если
 # число кратно 7, его надо выводить на экран.
 
-# num1 = int(input("Please enter the 1 number "))
-# num2 = int(input("Please enter the 2 number "))
-# while num1 <= num2 and num1 != 0 and num2 != 0 and num1 > 0 and num2 > 0:
-#     if num1 % 7 == 0:
-#         print(num1)
-#     num1 = num1 + 1
-# else:
-#     print("You entered 0 or number less then 0 ")
+num1 = int(input("Please enter the 1 number "))
+num2 = int(input("Please enter the 2 number "))
+while num1 <= num2 and num1 != 0 and num2 != 0 and num1 > 0 and num2 > 0:
+    if num1 % 7 == 0:
+        print(num1)
+    num1 = num1 + 1
+else:
+    print("You entered 0 or number less then 0 ")
 
 # Задание 2
 # Пользователь вводит с клавиатуры два числа (начало и конец диапазона). Требуется проанализировать все
@@ -20,39 +20,39 @@
 # 3. Все числа, кратные 7;
 # 4. Количество чисел, кратных 5.
 
-# num1 = int(input("Please enter the number, that is lower then 2 : "))
-# num2 = int(input("Please enter the number, that is higher then 1 : "))
-# while num1 <= num2 and num1 != 0 and num2 != 0 and num1 > 0 and num2 > 0:
-#     print(num1)
-#     num1 = num1 + 1
-#
-#
-# num1 = int(input("Please enter the number, that is higher then 2 : "))
-# num2 = int(input("Please enter the number, that is lower then 1 : "))
-# while num1 >= num2 and num1 != 0 and num2 != 0 and num1 > 0 and num2 > 0:
-#     print(num1)
-#     num1 = num1 - 1
-#
-#
-#
-# num1 = int(input("Please enter the number, that is higher then 2 : "))
-# num2 = int(input("Please enter the number, that is lower then 1 : "))
-# while num1 >= num2 and num1 != 0 and num2 != 0 and num1 > 0 and num2 > 0:
-#     if num1 % 7 == 0:
-#         print(num1)
-#     num1 = num1 - 1
-#
-#
-#
-# num1 = int(input("Please enter the number, that is higher then 2 : "))
-# num2 = int(input("Please enter the number, that is lower then 1 : "))
-# count = 0
-# while num1 >= num2 and num1 != 0 and num2 != 0 and num1 > 0 and num2 > 0:
-#     if num1 % 5 == 0:
-#         print(num1)
-#         count = count + 1
-#     num1 = num1 - 1
-# print(f"Number of countes are: {count}")
+num1 = int(input("Please enter the number, that is lower then 2 : "))
+num2 = int(input("Please enter the number, that is higher then 1 : "))
+while num1 <= num2 and num1 != 0 and num2 != 0 and num1 > 0 and num2 > 0:
+    print(num1)
+    num1 = num1 + 1
+
+
+num1 = int(input("Please enter the number, that is higher then 2 : "))
+num2 = int(input("Please enter the number, that is lower then 1 : "))
+while num1 >= num2 and num1 != 0 and num2 != 0 and num1 > 0 and num2 > 0:
+    print(num1)
+    num1 = num1 - 1
+
+
+
+num1 = int(input("Please enter the number, that is higher then 2 : "))
+num2 = int(input("Please enter the number, that is lower then 1 : "))
+while num1 >= num2 and num1 != 0 and num2 != 0 and num1 > 0 and num2 > 0:
+    if num1 % 7 == 0:
+        print(num1)
+    num1 = num1 - 1
+
+
+
+num1 = int(input("Please enter the number, that is higher then 2 : "))
+num2 = int(input("Please enter the number, that is lower then 1 : "))
+count = 0
+while num1 >= num2 and num1 != 0 and num2 != 0 and num1 > 0 and num2 > 0:
+    if num1 % 5 == 0:
+        print(num1)
+        count = count + 1
+    num1 = num1 - 1
+print(f"Number of countes are: {count}")
 
 
 
