@@ -9,6 +9,9 @@
 # посчитать отдельно сумму четных, нечетных и чисел,
 # кратных 9 в указанном диапазоне, а также среднеарифметическое каждой группы.
 
+
+
+#With for
 # x = int(input("Number 1 "))
 # y = int(input("Number 2 "))
 # sumch = 0
@@ -88,19 +91,19 @@
 # число 7 программа прекращает свою работу и выводит
 # на экран надпись «Good bye!»
 
-x = int(input("Number 1  "))
-y = int(input("Number 2  "))
-for i in range(x,y + 1):
-    if x == 7:
-        print("Goodbye")
-        break
-    print(i)
-    if i > 0:
-        print("Number is positive ")
-    if i < 0:
-        print("Number is negative ")
-    elif i == 0:
-        print("Number is equal to zero  ")
+# x = int(input("Number 1  "))
+# y = int(input("Number 2  "))
+# for i in range(x,y + 1):
+#     if x == 7:
+#         print("Goodbye")
+#         break
+#     print(i)
+#     if i > 0:
+#         print("Number is positive ")
+#     elif i < 0:
+#         print("Number is negative ")
+#     elif i == 0:
+#         print("Number is equal to zero  ")
 
 
 
@@ -111,3 +114,43 @@ for i in range(x,y + 1):
 # введенных чисел. Когда пользователь вводит число 7
 # программа прекращает свою работу и выводит на экран
 # надпись «Good bye!»
+
+
+
+#With For
+x = int(input("Number 1  "))
+y = int(input("Number 2  "))
+if x > y and y < x:
+    print(" 1 number can't be higher then 2-d ")
+sum = 0
+for i in range(x,y + 1):
+    if x == 7 or y == 7:
+        print("Goodbye")
+        break
+    if x >= 0 and y > x:
+        sum = sum + i
+print(sum, "Sum")
+if x < y:
+    print(f" {x} is the Lowest number ")
+if y > x:
+    print(f" {y} is the Biggest number ")
+
+
+# With while
+
+
+# maxn = 0
+# minn = 0
+# x = int(input("Enter the Number  "))
+#
+# sum = 0
+# while x != 7:
+#     if x == 7:
+#         print("Good bye!")
+#     sum = sum + x
+#     if x > maxn:
+#         maxn = x
+#     elif x < minn:
+#         minn = x
+#     x = int(input("Enter the Number, or 7 to stop  "))
+# print(maxn, minn, sum,"Max, Min, Sum")
