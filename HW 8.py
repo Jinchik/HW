@@ -118,23 +118,24 @@
 
 
 #With For
-x = int(input("Number 1  "))
-y = int(input("Number 2  "))
-if x > y and y < x:
-    print(" 1 number can't be higher then 2-d ")
-sum = 0
-for i in range(x,y + 1):
-    if x == 7 or y == 7:
-        print("Goodbye")
-        break
-    if x >= 0 and y > x:
-        sum = sum + i
-print(sum, "Sum")
-if x < y:
-    print(f" {x} is the Lowest number ")
-if y > x:
-    print(f" {y} is the Biggest number ")
 
+# x = int(input("Number 1  "))
+# y = int(input("Number 2  "))
+# if x > y and y < x:
+#     print(" 1 number can't be higher then 2-d ")
+# sum = 0
+# for i in range(x,y + 1):
+#     if x == 7 or y == 7:
+#         print("Goodbye")
+#         break
+#     if x >= 0 and y > x:
+#         sum = sum + i
+# print(sum, "Sum")
+# if x < y:
+#     print(f" {x} is the Lowest number ")
+# if y > x:
+#     print(f" {y} is the Biggest number ")
+#
 
 # With while
 
