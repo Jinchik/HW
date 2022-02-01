@@ -51,12 +51,30 @@
 # вывести обратно на экран.
 
 
-count = 0
-x = int(input("Number "))
-while x % 3 == 0 and x % 6 == 0 and count <=10:
-    count = count + 1
-    x = x - 3
-    x = x - 6
-    print(x)
+# a = str(input('enter number'))
+# for i in a:
+#     if i == '3' or i == '6':
+#         continue
+#     print(i, end = ' ')
+#
 
 
+while True:
+    num = input('Please, enter a number:')
+    for i in range(len(num)):
+        if num[i] == '6' or num[i] == '3':
+            print(num)
+            continue
+        else:
+            print(num[i], end='')
+    print()
+
+s = ''
+while True:
+    num = input('Please, enter a number:')
+    for i in range(len(num)):
+        if num[i] == '6' or num[i] == '3':
+            continue
+        else:
+            s = s + num[i]
+print(int(s))
