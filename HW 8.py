@@ -12,53 +12,53 @@
 
 
 #With for
-# x = int(input("Number 1 "))
-# y = int(input("Number 2 "))
-# sumch = 0
-# sumnech = 0
-# sum9 = 0
-# sum1 = 0
-# sum2 = 0
-# sum3 = 0
-# for i in range(x, y):
-#     if i % 2 == 0:
-#         sumch = sumch + i
-#         sum1 = sum1 + 1
-#     if i % 2 != 0:
-#         sumnech = sumnech + i
-#         sum2 = sum2 + 1
-#     if i % 9 == 0:
-#         sum9 = sum9 + i
-#         sum3 = sum3 + 1
-# print(sumch,"Chetnie", sumnech, "nechetnie", sum9, "sum 9")
-# print(sumch / sum1, sumnech / sum2, sum9 / sum3 )
+x = int(input("Number 1 "))
+y = int(input("Number 2 "))
+sumch = 0
+sumnech = 0
+sum9 = 0
+sum1 = 0
+sum2 = 0
+sum3 = 0
+for i in range(x, y):
+    if i % 2 == 0:
+        sumch = sumch + i
+        sum1 = sum1 + 1
+    if i % 2 != 0:
+        sumnech = sumnech + i
+        sum2 = sum2 + 1
+    if i % 9 == 0:
+        sum9 = sum9 + i
+        sum3 = sum3 + 1
+print(sumch,"Chetnie", sumnech, "nechetnie", sum9, "sum 9")
+print(sumch / sum1, sumnech / sum2, sum9 / sum3 )
 #
 #
 #
 #
 #
 # #With while
-# x = int(input("Number 1 "))
-# sumch = 0
-# sumnech = 0
-# sum9 = 0
-# sum1 = 0
-# sum2 = 0
-# sum3 = 0
-# while x > 0 and x < 100:
-#     x = x + 1
-#     if x % 2 == 0:
-#         sumch = sumch + x
-#         sum1 = sum1 + 1
-#     if x % 2 != 0:
-#         sumnech = sumnech + x
-#         sum2 = sum2 + 1
-#     if x % 9 == 0:
-#         sum9 = sum9 + x
-#         sum3 = sum3 + 1
-#
-# print(sumch,"Chetnie", sumnech, "nechetnie", sum9, "sum 9")
-# print(sumch / sum1, sumnech / sum2, sum9 / sum3 )
+x = int(input("Number 1 "))
+sumch = 0
+sumnech = 0
+sum9 = 0
+sum1 = 0
+sum2 = 0
+sum3 = 0
+while x > 0 and x < 100:
+    x = x + 1
+    if x % 2 == 0:
+        sumch = sumch + x
+        sum1 = sum1 + 1
+    if x % 2 != 0:
+        sumnech = sumnech + x
+        sum2 = sum2 + 1
+    if x % 9 == 0:
+        sum9 = sum9 + x
+        sum3 = sum3 + 1
+
+print(sumch,"Chetnie", sumnech, "nechetnie", sum9, "sum 9")
+print(sumch / sum1, sumnech / sum2, sum9 / sum3 )
 
 
 # Задание 2
@@ -74,10 +74,10 @@
 # %
 # %
 
-# length = int(input("Number  "))
-# symbol = str(input("Symbol "))
-# for i in range(length):
-#     print (symbol)
+length = int(input("Number  "))
+symbol = str(input("Symbol "))
+for i in range(length):
+    print (symbol)
 
 
 
@@ -140,18 +140,18 @@ if y > x:
 # With while
 
 
-# maxn = 0
-# minn = 0
-# x = int(input("Enter the Number  "))
-#
-# sum = 0
-# while x != 7:
-#     if x == 7:
-#         print("Good bye!")
-#     sum = sum + x
-#     if x > maxn:
-#         maxn = x
-#     elif x < minn:
-#         minn = x
-#     x = int(input("Enter the Number, or 7 to stop  "))
-# print(maxn, minn, sum,"Max, Min, Sum")
+maxn = 0
+minn = 0
+x = int(input("Enter the Number  "))
+
+sum = 0
+while x != 7:
+    if x == 7:
+        print("Good bye!")
+    sum = sum + x
+    if x > maxn:
+        maxn = x
+    elif x < minn:
+        minn = x
+    x = int(input("Enter the Number, or 7 to stop  "))
+print(maxn, minn, sum,"Max, Min, Sum")
