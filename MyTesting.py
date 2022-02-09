@@ -10,11 +10,32 @@
 # s = 'Hello World!'
 # for letter in range(len(word)):
 #     print(word [letter])
-h = 'Hello World!'
-#      0123456789
-#  -      987654321
-s = 'Hello World!'
-for i in range(1, len(s)+1):
-    print(s[-i])
+# h = 'Hello World!'
+# #      0123456789
+# #  -      987654321
+# s = 'Hello World!'
+# for i in range(1, len(s)+1):
+#     print(s[-i])
 
+#
+# myList = [1, 2, 4, 4, 1, 4, 2, 6, 2, 9]
+#
+# uniques = []
+# for number in myList:
+#     if number not in uniques:
+#         uniques.append(number)
+#
+# print("The list with unique elements only:")
+# print(uniques)
+
+
+
+# my_list = [8, 10, 8, 8, 8, 6, 2, 4]
+# new_num = []
+# for i in range(len(my_list)):
+#
+#     if my_list[i] != my_list[i] + 1:
+#
+#         new_num.append(my_list[i])
+# print(new_num)
 
