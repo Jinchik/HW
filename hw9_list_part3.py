@@ -42,3 +42,45 @@ for number in range (len(lisplus)):
         print(liswithoutsame)
 
 
+
+#############
+
+# l = [1,2,3,4,4,5,6,7,8,9,0,1,3]
+# for i in range(1,len(l)):
+#     if l[i] == l[i-1]:
+#         l[i] = ''
+# while '' in l:
+#     l.remove('')
+# print(l)
+# l = [1,2,3,4,4,5,6,7,8,9,0,1,3]
+# a = 1
+# length = len(l)
+# while a < length:
+#     if l[a] == l[a-1]:
+#         l.pop(a)
+#     a = a + 1
+#     length = len(l)
+# print(l)
+
+
+
+###############
+
+mini = 0
+maxi = 0
+s_minmax = []
+for n in range(len(s1)):
+    if mini > s1[n]:
+        mini = s1[n]
+        s_minmax.append(s1[n])
+    if maxi < s1[n]:
+        maxi = s1[n]
+        s_minmax.append(s1[n])
+print(mini, maxi)
+for n in range(len(s2)):
+    if mini > s2[n]:
+        mini = s2[n]
+        s_minmax.append(s2[n])
+    if maxi < s2[n]:
+        maxi = s2[n]
+        s_minmax.append(s2[n])
