@@ -9,21 +9,23 @@
 # целых числа x и y, после чего вычисляет и выводит
 # значение x в степени y.
 #
-# x = int(input("Enter please num 1 "))
-# y = int(input("Enter please num 2 "))
-# print(f"{x} ** {y} == {x ** y}", sep=" " )
+x = int(input("Enter please num 1 "))
+y = int(input("Enter please num 2 "))
+print(f"{x} ** {y} == {x ** y}", sep=" " )
 
 
 
-# while True:
-#     x = int(input('Please, enter the first number : '))
-#     y = int(input('Please, enter the second number : '))
-#     n = 1
-#     for i in range(y + 1):
-#         if i == 0:
-#             continue
-#         n = x * n
-#     print(n)
+
+cycle = True
+while cycle:
+    x = int(input('Enter please num 1, or 0 to stop : '))
+    y = int(input('Enter please num 2, or 0 to stop : '))
+    power = 1
+    for count in range(y):
+        if x == 0 or y == 0:
+            break
+        power = x * power
+    print(power)
 
 
 
@@ -33,13 +35,24 @@
 # 100 до 999 у которых есть две одинаковые цифры.
 
 
-# two_same = 0
-# for i in range(100, 999):
-#     [a], [b], [c] = str(i)
-#     if [a]==[b] or [a]==[c] or [b]==[c]:
-#         print(i)
-#         two_same += 1
-# print(two_same)
+two_same = 0
+for i in range(100, 999):
+    [a], [b], [c] = str(i)
+    if [a]==[b] or [a]==[c] or [b]==[c]:
+
+        two_same += 1
+print(two_same)
+
+
+two_same = 0
+for i in range(100,999):
+    n1 = (i) // 100
+    n2 = ((i) // 10) % 10
+    n3 = ((i) // 1) % 10
+    if n1 == n2 or n2 == n3 or n1 == n3:
+
+        two_same+=1
+print(two_same)
 
 
 
@@ -47,31 +60,25 @@
 # Подсчитать количество целых чисел в диапазоне от
 # 100 до 9999 у которых все цифры разные.
 
-# all_dif = 0
-# for i in range(100, 999):
-#     a,b,c = str(i)
-#     if a!=b and a!=c and b!=c:
-#         print(i)
-#         all_dif += 1
-# print(all_dif)
+all_dif = 0
+for i in range(100, 999):
+    a,b,c = str(i)
+    if a!=b and a!=c and b!=c:
 
-#
-# all_dif = 0
-# for i in range(100, 999):
-#     for n in range (i):
-#         if n != i:
-#             print(i)
-#             all_dif += 1
-# print(all_dif)#??????????????
+        all_dif += 1
+print(all_dif)
 
 
-number = 123456
-n1 = (number)//100000
-n2 = ((number)//10000)%10
-n3 = ((number)//1000)%10
-n4 = ((number)//100)%10
-n5 = ((number)//10)%10
-n6 = ((number)//1)%10
+
+all_dif = 0
+for i in range(100,999):
+    n1 = (i) // 100
+    n2 = ((i) // 10) % 10
+    n3 = ((i) // 1) % 10
+    if n1 != n2 and n2 != n3 and n1 != n3:
+
+        all_dif+=1
+print(all_dif)
 
 
 
@@ -86,24 +93,24 @@ n6 = ((number)//1)%10
 
 
 
-#
-# num = str(input('Please enter the number '))
-# for digit in num:
-#     if digit == "3" or digit == "6":
-#         continue
-#     print(digit, end="")
-#
-#
-#
-#
-#
-# while True:
-#     num = str(input('Please enter the number '))
-#     for digit in range(len(num)):
-#         if num[digit] == '6' or num[digit] == '3':
-#             continue
-#         else:
-#             print(num[digit], end=' ')
-#     print()
-#
-#
+
+num = str(input('Please enter the number '))
+for digit in num:
+    if digit == "3" or digit == "6":
+        continue
+    print(digit, end="")
+
+
+
+
+
+while True:
+    num = str(input('Please enter the number '))
+    for digit in range(len(num)):
+        if num[digit] == '6' or num[digit] == '3':
+            continue
+        else:
+            print(num[digit], end=' ')
+    print()
+
+
