@@ -4,17 +4,17 @@
 # искомое слово. Полученное число выведите на экран.
 # * Без использования метода count'''
 
-# s = 'chairghdcdfchaircdchfchair'
-# symbol = 'chair'
-# r = symbol[0]
-# count = 0
-# for i in range(len(s)):
-#     if s[i] == r:
-#         if symbol == s[i:i + len(symbol)]:
-#             count += 1
-#         else:
-#             continue
-# print(count)
+s = 'chairghdcdfchaircdchfchair'
+symbol = 'chair'
+r = symbol[0]
+count = 0
+for i in range(len(s)):
+    if s[i] == r:
+        if symbol == s[i:i + len(symbol)]:
+            count += 1
+        else:
+            continue
+print(count)
 
 
 
@@ -66,9 +66,9 @@
 
 
 
-
-text = "First word, second word"
-word = "second"
-change = "Third"
-for letter in range(len(text)+1):
-    print (text[letter:])
+#
+# text = "First word, second word"
+# word = "second"
+# change = "Third"
+# for letter in range(len(text)+1):
+#     print (text[letter:])
