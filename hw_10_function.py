@@ -79,7 +79,12 @@ def min(a, b, c, d, e):
     print(biggest)
 
 
-min(-14, 777, 13, 4, 433)
+a = int(input("1 number "))
+b = int(input("2 number "))
+c = int(input("3 number "))
+d = int(input("4 number "))
+e = int(input("5 number "))
+min(-a, b, c, d, e)
 
 
 # Задание 5
@@ -129,13 +134,14 @@ length(numbers)
 def pali(num):
     for i in range(len(num)):
         if num[i] != num[-i - 1]:
-            print("False")
+            # print("False")
             return False
 
     else:
-        print("True")
+        # print("True")
         return True
 
 
 num = input("Please enter the number ")
-pali(num)
+
+print(pali(num))
