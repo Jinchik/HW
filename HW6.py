@@ -26,14 +26,11 @@ while num1 <= num2 and num1 != 0 and num2 != 0 and num1 > 0 and num2 > 0:
     print(num1)
     num1 = num1 + 1
 
-
 num1 = int(input("Please enter the number, that is higher then 2 : "))
 num2 = int(input("Please enter the number, that is lower then 1 : "))
 while num1 >= num2 and num1 != 0 and num2 != 0 and num1 > 0 and num2 > 0:
     print(num1)
     num1 = num1 - 1
-
-
 
 num1 = int(input("Please enter the number, that is higher then 2 : "))
 num2 = int(input("Please enter the number, that is lower then 1 : "))
@@ -41,8 +38,6 @@ while num1 >= num2 and num1 != 0 and num2 != 0 and num1 > 0 and num2 > 0:
     if num1 % 7 == 0:
         print(num1)
     num1 = num1 - 1
-
-
 
 num1 = int(input("Please enter the number, that is higher then 2 : "))
 num2 = int(input("Please enter the number, that is lower then 1 : "))
@@ -53,18 +48,6 @@ while num1 >= num2 and num1 != 0 and num2 != 0 and num1 > 0 and num2 > 0:
         count = count + 1
     num1 = num1 - 1
 print(f"Number of countes are: {count}")
-
-
-
-
-
-
-
-
-
-
-
-
 
 # Задание 3
 # Пользователь вводит с клавиатуры два числа (начало
@@ -79,10 +62,6 @@ print(f"Number of countes are: {count}")
 # само число.
 
 
-
-
-
-
 num1 = int(input("Please enter the number, that is lower then 2 : "))
 num2 = int(input("Please enter the number, that is higher then 1 : "))
 while num1 <= num2 and num1 != 0 and num2 != 0 and num1 > 0 and num2 > 0:
@@ -90,7 +69,7 @@ while num1 <= num2 and num1 != 0 and num2 != 0 and num1 > 0 and num2 > 0:
         print(f"{num1} Fizz")
     elif num1 % 5 == 0:
         print(f"{num1} Buzz")
-    if num1 % 3 == 0 and num1 %5 == 0:
+    if num1 % 3 == 0 and num1 % 5 == 0:
         print(f"{num1} Fizz Buzz")
     elif num1 % 5 == 0:
         print(num1)

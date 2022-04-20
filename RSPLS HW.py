@@ -18,9 +18,9 @@
 # Спок». Переделайте игру по такому принципу.
 
 
-
-#Rock Paper Scissors lizard spoke
+# Rock Paper Scissors lizard spoke
 import random
+
 game = True
 global_player1_score = 0
 global_player2_score = 0
@@ -50,14 +50,13 @@ while game:
         player2_name = 'Bot'
     rounds = 3
 
-
-    for i in range(1,rounds+1):
+    for i in range(1, rounds + 1):
         player1_choice = ''
         player2_choice = ''
 
-        while player1_choice != 'r' and  player1_choice != 'p' and player1_choice != 's' and player1_choice != 'k' and player1_choice != 'l':
+        while player1_choice != 'r' and player1_choice != 'p' and player1_choice != 's' and player1_choice != 'k' and player1_choice != 'l':
             player1_choice = str(input(f"Enter your choice {player1_name}: [r],[p],[s],[k],[l] : "))
-            if player1_choice !='r'or player1_choice !='p'or player1_choice !='s'or player1_choice !='k'or player1_choice !='l':
+            if player1_choice != 'r' or player1_choice != 'p' or player1_choice != 's' or player1_choice != 'k' or player1_choice != 'l':
                 print("Please enter a correct value next time")
                 continue
         while player2_choice != 'r' and player2_choice != 'p' and player2_choice != 's' and player2_choice != 'k' and player2_choice != 'l':
