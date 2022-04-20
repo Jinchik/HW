@@ -198,4 +198,7 @@ else:
 #     print("Uncorrected operation")
 
 
+x=float(input("Введите значение x ="))   y=float(input("Введите значение y ="))   z=input("Введите оператор (+, -, /, *, mod, pow, div) =")   if z==+:      result=x+y   elif z==-:     result=x-y   elif z==pow:     result=pow(x,y)   elif z==*:      result=x*y    elif y!=0:     if z==/:       result=x/y     elif z==div:        result=x//y     elif z==mod:        result=x%y      elif y==0:      result="Деление на 0!"   print("Результат вычислений =",result)
+Все авторские права на этот материал принадлежат исключительно сайту Информатика. В случае обнаружения нарушения условий копирования наших материалов, будут предприняты соответствующие санкции к нарушителям: обращение к хостинговой компании и другие меры в соответствии с действующим законодательством РФ. Источник материала: http://inphormatika.ru/programming/python/zadachi_python/kak_sozdat_kalkulyator_na_pitone_.html
+
 
