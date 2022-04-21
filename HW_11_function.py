@@ -11,27 +11,28 @@
 # Напишите функцию, вычисляющую произведение
 # элементов списка целых. Список передаётся в качестве параметра. Полученный результат возвращается из функции.
 
-def multifunc(x):
-    multi = 1
-    for num in x:
-        multi = multi * num
-    return multi
-    print(multi)
+# def multifunc(x):
+#     multi = 1
+#     for num in x:
+#         multi = multi * num
+#     return multi
+#     print(multi)
+#
+#
+# a = []
+# while True:
+#     b = int(input(f"Please enter numbers to see multi of all number. Enter 0 to stop. \n"))
+#     if b == 0:
+#         break
+#     else:
+#         a.append(b)
+# print(multifunc(a))
 
-a = []
-while True:
-    b = int(input(f"Please enter numbers to see multi of all number. Enter 0 to stop. \n"))
-    if b == 0:
-        break
-    else:
-        a.append(b)
-print(multifunc(a))
 
 # Задание 2
 # Напишите функцию для нахождения минимума в
 # списке целых. Список передаётся в качестве параметра.
 # Полученный результат возвращается из функции.
-
 
 
 # def min(x):
@@ -41,33 +42,43 @@ print(multifunc(a))
 #             min = n
 #
 #     return min
-# a = [12,2,98,4,5,-1,1999]
+#
+#
+# a = []
+# while True:
+#     b = int(input(f"Please enter numbers to see lowest number. Enter 0 to stop. \n"))
+#     if b == 0:
+#         break
+#     else:
+#         a.append(b)
 # print(min(a))
-
-
-
-def min(x):
-    min = 0
-    for n in x:
-        if min < n:
-            min = n
-
-    return min
-a = []
-while True:
-    b = int(input(f"Please enter numbers to see lowest number. Enter 0 to stop. \n"))
-    if b == 0:
-        break
-    else:
-        a.append(b)
-print(min(a))
-
-
 
 # Задание 3
 # Напишите функцию, определяющую количество простых чисел в списке целых. Список передаётся в качестве
 # параметра. Полученный результат возвращается из функции.
 
+
+
+# def simplecount(x):
+#     simple = []
+#     d = 2
+#     for n in x:
+#         while n % d != 0:
+#             d += 1
+#             simple.append(n)
+#         if n == 0:
+#             break
+#
+#     return simple
+#
+# a = []
+# while True:
+#     b = int(input(f"Please enter numbers to see lowest number. Enter 0 to stop. \n"))
+#     if b == 0:
+#         break
+#     else:
+#         a.append(b)
+# print(simplecount(a))
 
 
 
