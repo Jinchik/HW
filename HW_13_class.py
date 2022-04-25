@@ -46,7 +46,7 @@ class Human:
 print(Human.lfp)
 print(Human.bd)
 new_human = Human()
-new_human.naming("Tony")
+new_human.naming("Tonny")
 print(new_human.lfp)
 new_human.birth("15.12.1970")
 print(new_human.bd)
@@ -94,6 +94,7 @@ class Town:
         self.telcode = new_code
         return self.telcode
 
+
 new_town = Town()
 print(new_town.countofpeople)
 new_town.peoplerise()
@@ -120,7 +121,7 @@ class Country:
     continent = 'Europe'
     capital = "Kyiv"
     countofpeople = 48000000
-    name_of_towns = ["Odesa","Kyiv","Nikolaev","Kherson","Kharkiv", "Mariupol"]
+    name_of_towns = ["Odesa", "Kyiv", "Nikolaev", "Kherson", "Kharkiv", "Mariupol"]
     telcode = '+380'
 
     def coutrynaming(self, new_country):
@@ -150,9 +151,10 @@ class Country:
         self.telcode = new_code
         return self.telcode
 
+
 new_country = Country()
 print(new_country.name_of_towns)
-new_country.townschanging(["NY","LA"])
+new_country.townschanging(["NY", "LA"])
 print(new_country.name_of_towns)
 new_country.telcodechange("+370")
 print(new_country.telcode)
@@ -161,8 +163,6 @@ new_country.peoplerise()
 new_country.peoplerise()
 new_country.peoplerise()
 print(new_country.countofpeople)
-
-
 
 
 # Задание 4
@@ -179,7 +179,6 @@ class Fraction:
     subt = 0
     div = 0
     multi = 0
-
 
     def numerchange(self, new_numerator):
         self.numerator = new_numerator
