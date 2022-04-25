@@ -6,9 +6,9 @@ from XPATH import money_button_xpath
 
 # 5 -Check money menu
 # Check list:
-# Open http://yanigen.com.ua (pass)
-# Click on грн. button on right corner of header (pass)
-# Click on $ button on right corner of header (pass)
+# Open http://yanigen.com.ua. Site exist was opened (pass)
+# Click on грн. button on right corner of header. Button "грн." was clickable and was clicked (pass)
+# Click on $ button on right corner of header. Button "$" was clickable and was clicked (pass)
 
 driver = webdriver.Chrome()
 driver.get('http://yanigen.com.ua')

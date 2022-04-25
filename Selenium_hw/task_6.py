@@ -7,19 +7,19 @@ from XPATH import subscribe_xpath
 
 # 5 - Check subscribe to news
 # Check list:
-# Open http://yanigen.com.ua (pass)
-# Click on en language button on the top right corner of the site header
+# Open http://yanigen.com.ua. Site exist was opened (pass)
+# Click on en language button on the top right corner of the site header. Button "en" language was clickable and was clicked (pass)
 # Roll down to the site footer (pass)
-# Look for text present "ПОДПИСЫВАЙТЕСЬ НА НОВОСТИ" above the name line  (pass)
-# Look for element present "Name" line   (pass)
-# Look for element present "E-mail" line   (pass)
-# Look for element present "Subscribe button" line   (pass)
-# Try to enter Letters in the "Name" line (pass)
-# Try to enter Numbers in the "Name" line (pass)
-# Try to enter Letters in the ""E-mail"" line (pass)
-# Try to enter Numbers in the ""E-mail"" line (pass)
-# Try to enter Symbols in the ""E-mail"" line (pass)
-# Click on the "Subscribe button" (pass)
+# Look for text present "ПОДПИСЫВАЙТЕСЬ НА НОВОСТИ" above the name line. Text "ПОДПИСЫВАЙТЕСЬ НА НОВОСТИ" was present  (pass)
+# Look for element present "Name" line. Element "Name" line was present   (pass)
+# Look for element present "E-mail" line. Element "E-mail" line was present   (pass)
+# Look for element present "Subscribe button" line. Element "Subscribe button" line was present   (pass)
+# Try to enter Letters in the "Name" line. Letters were typed (pass)
+# Try to enter Numbers in the "Name" line. Numbers were typed (pass)
+# Try to enter Letters in the ""E-mail"" line. Letters were typed  (pass)
+# Try to enter Numbers in the ""E-mail"" line. Numbers were typed (pass)
+# Try to enter Symbols in the ""E-mail"" line. Symbols were typed (pass)
+# Click on the "Subscribe button". Button "Subscribe button" was clickable and was clicked  (pass)
 
 driver = webdriver.Chrome()
 driver.get('http://yanigen.com.ua')

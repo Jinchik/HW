@@ -6,14 +6,14 @@ from XPATH import main_menu_xpath
 
 # 2 - Check main menu
 # Check list:
-# Open http://yanigen.com.ua (pass)
-# Click on ru language button on right corner of header (pass)
-# Click on ГЛАВНАЯ button on the site header main menu (pass)
-# Click on ИЗДЕЛИЯ НА ЗАКАЗ button on the site header main menu (pass)
-# Click on КАТАЛОГ button on the site header main menu (pass)
-# Click on КЛИЕНТАМ button on the site header main menu (pass)
-# Click on О НАС button on the site header main menu (pass)
-# Click on КОНТАКТЫ button on the site header main menu (pass)
+# Open http://yanigen.com.ua. Site exist was opened (pass)
+# Click on ru language button on right corner of header. Button "ru" language was clickable and was clicked (pass)
+# Click on ГЛАВНАЯ button on the site header main menu. Button "ГЛАВНАЯ" was clickable and was clicked (pass)
+# Click on ИЗДЕЛИЯ НА ЗАКАЗ button on the site header main menu. Button "ИЗДЕЛИЯ НА ЗАКАЗ" was clickable and was clicked (pass)
+# Click on КАТАЛОГ button on the site header main menu. Button "КАТАЛОГ" was clickable and was clicked (pass)
+# Click on КЛИЕНТАМ button on the site header main menu. Button "КЛИЕНТАМ" was clickable and was clicked (pass)
+# Click on О НАС button on the site header main menu. Button "О НАС" was clickable and was clicked (pass)
+# Click on КОНТАКТЫ button on the site header main menu. Button "КОНТАКТЫ" was clickable and was clicked (pass)
 
 
 driver = webdriver.Chrome()

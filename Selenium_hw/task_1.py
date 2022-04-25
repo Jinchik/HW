@@ -5,7 +5,7 @@ from selenium.webdriver.support import expected_conditions as EC
 
 # 1 - Open site
 # Check list:
-# Open http://yanigen.com.ua (pass)
+# Open http://yanigen.com.ua.  Site exist was opened (pass)
 
 
 driver = webdriver.Chrome()

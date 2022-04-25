@@ -5,10 +5,10 @@ from selenium.webdriver.support import expected_conditions as EC
 from XPATH import lang_buttons_xpath
 # 4 - Check language menu
 # Check list:
-# Open http://yanigen.com.ua (pass)
-# Click on ru language button on right corner of header (pass)
-# Click on eng language button on right corner of header (pass)
-# Click on ua language button on right corner of header (pass)
+# Open http://yanigen.com.ua. Site exist was opened (pass)
+# Click on ru language button on right corner of header. Button "ru" language was clickable and was clicked (pass)
+# Click on en language button on right corner of header. Button "en" language was clickable and was clicked (pass)
+# Click on ua language button on right corner of header. Button "ua" language was clickable and was clicked (pass)
 
 
 driver = webdriver.Chrome()
