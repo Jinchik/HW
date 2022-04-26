@@ -115,7 +115,7 @@ print(new_town.tow_name)
 # количество жителей в стране, телефонный код страны,
 # название столицы, название городов страны. Реализуйте
 # методы класса для ввода данных, вывода данных, реализуйте доступ к отдельным полям через методы класса.
-
+#
 class Country:
     country_name = "Ukraine"
     continent = 'Europe'
@@ -214,3 +214,7 @@ new_fraction.division()
 print(f"Division = {new_fraction.div}")
 new_fraction.multiplication()
 print(f"Multiplication = {new_fraction.multi}")
+
+
+
+
