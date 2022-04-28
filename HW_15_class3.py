@@ -105,6 +105,8 @@ book_a = Book("Just","Testing","The","Code","Sorry","Please")
 print(book_a)
 print(book_a.rare)
 book_a.money = 15
+book_a.name = "1984"
+print(book_a.name)
 
 # Задание 3
 # К уже реализованному классу «Стадион» добавьте

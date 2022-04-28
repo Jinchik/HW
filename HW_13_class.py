@@ -173,41 +173,58 @@ print(new_country.countofpeople)
 
 
 
-class Fraction:
-    numerator = 17
-    denominator = 87
+from fractions import Fraction
+class Fract:
+    Fraction.numerator1 = 17
+    x = Fraction.numerator1 = 17
+    Fraction.denominator1 = 87
+    y = Fraction.denominator1 = 87
+    Fraction.numerator2 = 17
+    b = Fraction.numerator2 = 87
+    Fraction.denominator2 = 87
+    c = Fraction.denominator2 = 17
     add = 0
     subt = 0
     div = 0
     multi = 0
 
-    def numerchange(self, new_numerator):
-        self.numerator = new_numerator
-        return self.numerator
+    def numerchange1(self, new_numerator1):
+        self.x = new_numerator1
+        return self.x
 
-    def denomchange(self, new_denominator):
-        self.denominator = new_denominator
-        return self.denominator
+    def denomchange1(self, new_denominator1):
+        self.y = new_denominator1
+        return self.y
+
+    def numerchange2(self, new_numerator2):
+        self.b = new_numerator2
+        return self.b
+
+    def denomchange2(self, new_denominator2):
+        self.c = new_denominator2
+        return self.c
 
     def addition(self):
-        self.add = self.numerator + self.denominator
+        self.add = Fraction(self.x,self.y) + Fraction(self.b,self.c)
         return self.add
 
     def subtraction(self):
-        self.subt = self.numerator - self.denominator
+        self.subt = Fraction(self.x,self.y) - Fraction(self.b,self.c)
         return self.subt
 
     def division(self):
-        self.div = self.numerator / self.denominator
+        self.div = Fraction(self.x,self.y) / Fraction(self.b,self.c)
         return self.div
 
     def multiplication(self):
-        self.multi = self.numerator * self.denominator
+        self.multi = Fraction(self.x,self.y) * Fraction(self.b,self.c)
         return self.multi
 
 
 
-new_fraction = Fraction()
+new_fraction = Fract()
+
+
 new_fraction.addition()
 print(f"Additing = {new_fraction.add}")
 new_fraction.subtraction()

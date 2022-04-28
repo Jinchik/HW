@@ -139,21 +139,40 @@
 # print(dir())
 
 
-from platform import platform
+# from platform import platform
+#
+# print(platform())
+# print(platform(1))
+# print(platform(0, 1))
+# from platform import machine
+#
+# print(machine())
+#
+# from platform import system
+#
+# print(system())
+# from platform import python_implementation, python_version_tuple
+#
+# print(python_implementation())
+#
+# for atr in python_version_tuple():
+#     print(atr)
 
-print(platform())
-print(platform(1))
-print(platform(0, 1))
-from platform import machine
+from fractions import Fraction
+class Fract:
+    Fraction.numerator1 = 17
+    Fraction.denominator1 = 87
+    Fraction.numerator2 = 17
+    Fraction.denominator2 = 87
+    add = 0
+    subt = 0
+    div = 0
+    multi = 0
+Fraction.numerator1 = 17
+Fraction.denominator1 = 87
+Fraction.numerator2 = 87
+Fraction.denominator2 = 17
 
-print(machine())
-
-from platform import system
-
-print(system())
-from platform import python_implementation, python_version_tuple
-
-print(python_implementation())
-
-for atr in python_version_tuple():
-    print(atr)
+x = Fraction(Fraction.numerator1,Fraction.denominator1)
+y = Fraction(Fraction.numerator2,Fraction.denominator2)
+print(x+y)
