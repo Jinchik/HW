@@ -223,6 +223,10 @@ class Fract:
 
 
 new_fraction = Fract()
+new_fraction.x = 50
+new_fraction.y = 70
+new_fraction.b = 130
+new_fraction.c = 14
 
 
 new_fraction.addition()
