@@ -164,13 +164,14 @@ new_country.peoplerise()
 new_country.peoplerise()
 print(new_country.countofpeople)
 
-
 # Задание 4
 # Создайте класс «Дробь». Необходимо хранить в полях
 # класса: числитель и знаменатель. Реализуйте методы класса
 # для ввода данных, вывода данных, реализуйте доступ к
 # отдельным полям через методы класса. Также создайте
 # методы класса для выполнения арифметических операций (сложение, вычитание, умножение, деление, и т.д.).
+
+
 
 class Fraction:
     numerator = 17
@@ -205,16 +206,13 @@ class Fraction:
         return self.multi
 
 
+
 new_fraction = Fraction()
 new_fraction.addition()
 print(f"Additing = {new_fraction.add}")
 new_fraction.subtraction()
-print(f"Additing = {new_fraction.subt}")
+print(f"Subtraction = {new_fraction.subt}")
 new_fraction.division()
 print(f"Division = {new_fraction.div}")
 new_fraction.multiplication()
 print(f"Multiplication = {new_fraction.multi}")
-
-
-
-

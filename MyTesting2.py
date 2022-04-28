@@ -88,31 +88,72 @@
 
 
 # создаем класс Car
-class Car:
+# class Car:
+#
+#     # создаем конструктор класса Car
+#     def __init__(self, model):
+#         # Инициализация свойств.
+#         self.model = model
+#
+#     # создаем свойство модели.
+#     @property
+#     def model(self):
+#         return self.__model
+#
+#     # Сеттер для создания свойств.
+#     @model.setter
+#     def model(self, model):
+#         if model < 2000:
+#             self.__model = 2000
+#         elif model > 2018:
+#             self.__model = 2018
+#         else:
+#             self.__model = model
+#
+#     def getCarModel(self):
+#         return "Год выпуска модели " + str(self.model)
+#
+#
+# carA = Car(2088)
+# print(carA.getCarModel())
 
-    # создаем конструктор класса Car
-    def __init__(self, model):
-        # Инициализация свойств.
-        self.model = model
 
-    # создаем свойство модели.
-    @property
-    def model(self):
-        return self.__model
-
-    # Сеттер для создания свойств.
-    @model.setter
-    def model(self, model):
-        if model < 2000:
-            self.__model = 2000
-        elif model > 2018:
-            self.__model = 2018
-        else:
-            self.__model = model
-
-    def getCarModel(self):
-        return "Год выпуска модели " + str(self.model)
+# import random
+# with open('test1.txt', 'r') as file:
+#   lines = file.readlines()
+#   adjective = lines[random.randint(0, len(lines)-1)][:-1]
+#   print(len(lines))
+#   print(adjective)
+# with open('test1.txt', 'r') as file2:
+#   lines2 = file2.readlines()
+#   animal = lines2[random.randint(0, len(lines)-1)][:-1]
+#   print(animal)
+# from fractions import Fraction
+# x = Fraction(2,5)
+# y = Fraction(1,8)
+# print(x+y)
+# number = [1, 2, 3]
+# print(dir(number))
+#
+# print('\nReturn Value from empty dir()')
+# print(dir())
 
 
-carA = Car(2088)
-print(carA.getCarModel())
+from platform import platform
+
+print(platform())
+print(platform(1))
+print(platform(0, 1))
+from platform import machine
+
+print(machine())
+
+from platform import system
+
+print(system())
+from platform import python_implementation, python_version_tuple
+
+print(python_implementation())
+
+for atr in python_version_tuple():
+    print(atr)
