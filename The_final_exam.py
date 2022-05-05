@@ -3,31 +3,29 @@
 # прямоугольном треугольнике и выводит его площадь. Каждое число
 # записано в отдельной строке.
 
-def triangle_square(a,b):
+def triangle_square(a, b):
     try:
         while a != "0" and b != "0":
             if a != 0 and b != 0 and a.isdigit() and b.isdigit():
                 a = int(a)
                 b = int(b)
-                print (a*b/2)
+                print(a * b / 2)
                 a = input("Please enter the  1 leg or 0 to break ")
                 b = input("Please enter the  2 leg or 0 to break ")
 
             elif a.isalpha() or b.isalpha():
                 print("You entered the letter")
                 break
-    except :
+    except:
         print("oops you broke something")
+
+
 try:
     a = input("Please enter the  1 leg or 0 to break ")
     b = input("Please enter the  2 leg or 0 to break ")
-    print(triangle_square(a,b))
+    print(triangle_square(a, b))
 except ValueError:
     print("You wrote a wrong number o letter")
-
-
-
-
 
 # 2. В школе решили набрать три новых математических класса. Так как
 # занятия по математике у них проходят в одно и то же время, было
@@ -37,6 +35,37 @@ except ValueError:
 # всего нужно закупить парт чтобы их хватило на всех учеников?
 # Программа получает на вход три натуральных числа: количество
 # учащихся в каждом из трех классов.
+
+
+def amount_of_students(a,b,c):
+    try:
+        while a != "0" and b != "0" and c != "0":
+            if a != 0 and b != 0 and c != 0 and a.isdigit() and b.isdigit() and c.isdigit():
+                a = int(a)
+                b = int(b)
+                c = int(c)
+                print ((a+b+c) / 2)
+                a = input("Please enter the amount of students in 1 grade ")
+                b = input("Please enter the amount of students in 2 grade ")
+                c = input("Please enter the amount of students in 3 grade ")
+
+            elif a.isalpha() or b.isalpha() or c.isalpha() :
+                print("You entered the letter or 0")
+                break
+    except:
+        print("oops you broke something")
+try:
+    a = input("Please enter the amount of students in 1 grade ")
+    b = input("Please enter the amount of students in 2 grade ")
+    c = input("Please enter the amount of students in 3 grade ")
+    print(amount_of_students(a,b,c))
+except ValueError:
+    print("You wrote a wrong number o letter")
+
+
+
+
+
 # 3. Даны три целых числа. Определите, сколько среди них совпадающих.
 # Программа должна вывести одно из чисел: 3 (если все совпадают), 2
 # (если два совпадает) или 0 (если все числа различны).
