@@ -158,21 +158,38 @@
 # for atr in python_version_tuple():
 #     print(atr)
 
-from fractions import Fraction
-class Fract:
-    Fraction.numerator1 = 17
-    Fraction.denominator1 = 87
-    Fraction.numerator2 = 17
-    Fraction.denominator2 = 87
-    add = 0
-    subt = 0
-    div = 0
-    multi = 0
-Fraction.numerator1 = 17
-Fraction.denominator1 = 87
-Fraction.numerator2 = 87
-Fraction.denominator2 = 17
+# from fractions import Fraction
+# class Fract:
+#     Fraction.numerator1 = 17
+#     Fraction.denominator1 = 87
+#     Fraction.numerator2 = 17
+#     Fraction.denominator2 = 87
+#     add = 0
+#     subt = 0
+#     div = 0
+#     multi = 0
+# Fraction.numerator1 = 17
+# Fraction.denominator1 = 87
+# Fraction.numerator2 = 87
+# Fraction.denominator2 = 17
+#
+# x = Fraction(Fraction.numerator1,Fraction.denominator1)
+# y = Fraction(Fraction.numerator2,Fraction.denominator2)
+# print(x+y)
+import pygame
 
-x = Fraction(Fraction.numerator1,Fraction.denominator1)
-y = Fraction(Fraction.numerator2,Fraction.denominator2)
-print(x+y)
+run = True
+width = 400
+height = 100
+pygame.init()
+screen = pygame.display.set_mode((width, height))
+font = pygame.font.SysFont(None, 48)
+text = font.render("Welcome to pygame", True, (255, 255, 255))
+screen.blit(text, ((width - text.get_width()) // 2, (height - text.get_height()) // 2))
+pygame.display.flip()
+while run:
+    for event in pygame.event.get():
+        if event.type == pygame.QUIT\
+        or event.type == pygame.MOUSEBUTTONUP\
+        or event.type == pygame.KEYUP:
+            run = False
