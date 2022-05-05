@@ -44,7 +44,7 @@ def amount_of_students(a,b,c):
                 a = int(a)
                 b = int(b)
                 c = int(c)
-                print ((a+b+c) / 2)
+                print ((a+b+c) // 2)
                 a = input("Please enter the amount of students in 1 grade ")
                 b = input("Please enter the amount of students in 2 grade ")
                 c = input("Please enter the amount of students in 3 grade ")
