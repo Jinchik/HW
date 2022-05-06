@@ -208,34 +208,54 @@
 # 7. Дано два числа a и b. Выведите гипотенузу треугольника с заданными
 # катетами.
 
-try:
-    def hypotenuse(x, y):
-        z = float()
-        while (x, y) != int(0) or str(float(x, y)) != (x, y).isalpha() or str(x, y) != str(" "):
-            z = (float(x) ** 2 + float(y) ** 2)**0.5
-            print(float(z))
-            x = input("Please enter the number the 1 Cathetus or any letter ot '_' to break:  ")
-            y = input("Please enter the number the 2 Cathetus or any letter ot '_' to break:  ")
-
-
-except ValueError:
-    print("You wrote letter or entered '_'!")
-except:
-    print("You broke something")
-
-try:
-    x = input("Please enter the number the 1 Cathetus or any letter ot '_' to break:  ")
-    y = input("Please enter the number the 2 Cathetus or any letter ot '_' to break:  ")
-    print(hypotenuse(x,y))
-except ValueError:
-    print("You wrote letter or entered '_'!")
-except:
-    print("You broke something")
+# try:
+#     def hypotenuse(x, y):
+#         z = float()
+#         while (x, y) != int(0) or str(float(x, y)) != (x, y).isalpha() or str(x, y) != str(" "):
+#             z = (float(x) ** 2 + float(y) ** 2)**0.5
+#             print(float(z))
+#             x = input("Please enter the number the 1 Cathetus or any letter ot '_' to break:  ")
+#             y = input("Please enter the number the 2 Cathetus or any letter ot '_' to break:  ")
+#
+#
+# except ValueError:
+#     print("You wrote letter or entered '_'!")
+# except:
+#     print("You broke something")
+#
+# try:
+#     x = input("Please enter the number the 1 Cathetus or any letter ot '_' to break:  ")
+#     y = input("Please enter the number the 2 Cathetus or any letter ot '_' to break:  ")
+#     print(hypotenuse(x,y))
+# except ValueError:
+#     print("You wrote letter or entered '_'!")
+# except:
+#     print("You broke something")
 
 # 8. Дано N чисел: сначала вводится число N, затем вводится ровно N целых
 # чисел. Подсчитайте количество нулей среди введенных чисел и
 # выведите это количество. Вам нужно подсчитать количество чисел,
 # равных нулю, а не количество цифр.
+
+x = int(input("Please enter the number"))
+y = 0
+z = 0
+
+for i in range(x):
+    y = i + y
+    for j in str(y):
+        if j == "0":
+            z +=1
+print(z)
+
+
+
+
+
+
+
+
+
 # 9. Дана строка, состоящая ровно из двух слов, разделенных пробелом.
 # Переставьте эти слова местами. Результат запишите в строку и
 # выведите получившуюся строку.
