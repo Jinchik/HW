@@ -194,8 +194,11 @@
 #         or event.type == pygame.KEYUP:
 #             run = False
 
+#
+# a = 15
+# print(type(a))
+# if type(a) != str:
+#     print("hello")
 
-a = 15
-print(type(a))
-if type(a) != str:
-    print("hello")
+a , b = float(input()), float(input())
+c =print(round(a + b , 1))

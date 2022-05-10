@@ -237,48 +237,203 @@
 # выведите это количество. Вам нужно подсчитать количество чисел,
 # равных нулю, а не количество цифр.
 
-x = int(input("Please enter the number"))
-y = 0
-z = 0
+# try:
+#     def zerous(x):
+#         while x != x.isalpha() or x != "0":
+#             y = 0
+#             z = 0
+#             if x == str("0") or str(x) == x.isalpha():
+#                 print("You wrote letter or entered '_'!")
+#                 break
+#
+#             for i in range(int(x)):
+#                 y = i + y
+#                 for j in str(y):
+#                     if j == "0":
+#                         z += 1
+#             print(z)
+#             x = input("Please enter the number: ")
+#
+# except ValueError:
+#     print("You wrote letter or entered '_'!")
+# except:
+#     print("You broke something")
+#
+# try:
+#     x = input("Please enter the number: ")
+#     print(zerous(x))
+# except ValueError:
+#     print("You wrote letter or entered '_'!")
+# except:
+#     print("You broke something")
 
-for i in range(x):
-    y = i + y
-    for j in str(y):
-        if j == "0":
-            z +=1
-print(z)
-
-
-
-
-
-
-
-
+# x = int(input("Please enter the number: "))
+# y = 0
+# z = 0
+#
+# for i in range(x):
+#     y = i + y
+#     for j in str(y):
+#         if j == "0":
+#             z += 1
+# print(z)
 
 # 9. Дана строка, состоящая ровно из двух слов, разделенных пробелом.
 # Переставьте эти слова местами. Результат запишите в строку и
 # выведите получившуюся строку.
 # При решении этой задачи не стоит пользоваться циклами и
 # инструкцией if.
+
+# a = "Hello World"
+# a1 = a[6:11]
+# a2 = a[0:5]
+# a = a1 + " " + a2
+# print(a)
+
+
+# a = "Hello World"
+# a1 = "Hello"
+# a2 = "World"
+# a = a.replace("Hello",a2)
+# a = a.replace("World",a1)
+# a = a.replace("Hello",a2,1)
+# print(a)
+
+# a = "Hello World"
+# a1 = a[slice(0,5)]
+# a2 = a[slice(6,11)]
+# a3 = a2 + " " + a1
+# print(a3)
+
+# a = input("Enter 2 words with space please: ")
+# a1 = a.find(' ')
+# print(a[a1+1:]+ a[a1] +a[:a1])
+
 # 10.Дана строка. Найдите в этой строке второе вхождение буквы f, и
 # выведите индекс этого вхождения. Если буква f в данной строке
 # встречается только один раз, выведите число -1, а если не встречается
 # ни разу, выведите число -2.
+
+
+# a = input("Please enter the text that contains 1 or 2 or 0 letters 'f': ")
+# countf = ""
+# ind = -1
+# for i in a:
+#     ind = ind + 1
+#     if i == "f":
+#         countf = countf + i
+#         if countf == "ff":
+#             print(f"The index of 2-d f is: {ind}")
+#             break
+# if countf == "f":
+#     print("-1")
+# if countf == "":
+#     print("-2")
+
+
 # 11.Дана строка, состоящая ровно из двух слов, разделенных пробелом.
 # Переставьте эти слова местами. Результат запишите в строку и
 # выведите получившуюся строку.
 # При решении этой задачи не стоит пользоваться циклами и
 # инструкцией if.
+
+
+# a = input("Enter 2 words with space please: ")
+# b = a.split(' ')
+# c = b[1]+' '+ b[0]
+# print(c)
+
+# a = input("Enter 2 words with space please: ")
+# i = a.index(' ')
+# c= a[i+1:]+' '+a[:i]
+# print(c)
+
+
 # 12.Программа получает на вход последовательность целых
 # неотрицательных чисел, каждое число записано в отдельной строке.
 # Последовательность завершается числом 0, при считывании которого
 # программа должна закончить свою работу и вывести количество
 # членов последовательности (не считая завершающего числа 0). Числа,
 # следующие за числом 0, считывать не нужно.
+
+
+# x = int(input("Please enter your number: "))
+# numb = ""
+# count = 1
+# while x != 0:
+#     count = count + 1
+#     numb = numb + str(f"Number {x}\n")
+#     x = int(input("Please enter your number: "))
+#     if x == 0:
+#         print(numb)
+#         print(f"Total count are: {count}")
+
+
+# x = int(input("Please enter your number: "))
+# if x <= 0:
+#     print("Number cant be lover then 0")
+# numb = ""
+# count = -1
+# while x >= 0:
+#     count = count + 1
+#     numb = numb + str(f"Number {x}\n")
+#     x = x - 1
+#
+# print(numb)
+# print(f"Total count are: {count}")
+
+# x = int(input("Please enter your 1 number: "))
+# y = int(input("Please enter your 2 number: "))
+# z = 0
+# if x < y:
+#     x,y = y,x
+#     # z = y
+#     # y = x
+#     # x = z
+# numb = ""
+# count = -1
+# for i in range (x,y-1,-1):
+#     count = count + 1
+#     numb = numb + str(f"Number {i}\n")
+#     if x < 0 or y < 0:
+#         print("Number cant be lover then 0")
+#         break
+#
+# print(numb)
+# print(f"Total count are: {count}")
+
+
 # 13.Последовательность состоит из натуральных чисел и завершается
 # числом 0. Определите, сколько элементов этой последовательности
 # больше предыдущего элемента.
+
+# x = int(input("Please enter your number: "))
+# numb = ""
+# numb2 = list()
+# count = 0
+# while x != 0:
+#     count = count + 1
+#     numb = numb + str(f"Number {x}\n")
+#     numb2.append(x)
+#     x = int(input("Please enter your number: "))
+#     if x == 0:
+#         print(numb)
+#         print(f"Total count are: {count}")
+# countbigger = -1
+# bigger = 0
+# intnumb2 = [int(n) for n in numb2]
+#
+# for i in intnumb2:
+#     if bigger > i:
+#         bigger = i
+#         pass
+#     elif bigger <i:
+#         bigger = i
+#         countbigger += 1
+#
+#
+# print(f"The count of numbers that were bigger then the past are: {countbigger}")
+
 # 14.Переставьте соседние элементы списка (A[0] c A[1], A[2] c A[3] и т.
 # д.). Если элементов нечетное число, то последний элемент остается на
 # своем месте.
