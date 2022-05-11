@@ -222,7 +222,8 @@
 #     print("You wrote letter or entered '_'!")
 # except:
 #     print("You broke something")
-#
+
+
 # try:
 #     x = input("Please enter the number the 1 Cathetus or any letter ot '_' to break:  ")
 #     y = input("Please enter the number the 2 Cathetus or any letter ot '_' to break:  ")
@@ -236,7 +237,9 @@
 # чисел. Подсчитайте количество нулей среди введенных чисел и
 # выведите это количество. Вам нужно подсчитать количество чисел,
 # равных нулю, а не количество цифр.
-
+'''''
+1 option
+'''''
 # try:
 #     def zerous(x):
 #         while x != x.isalpha() or x != "0":
@@ -267,6 +270,10 @@
 # except:
 #     print("You broke something")
 
+'''''
+2 option
+'''''
+
 # x = int(input("Please enter the number: "))
 # y = 0
 # z = 0
@@ -283,14 +290,18 @@
 # выведите получившуюся строку.
 # При решении этой задачи не стоит пользоваться циклами и
 # инструкцией if.
-
+'''''
+1 option
+'''''
 # a = "Hello World"
 # a1 = a[6:11]
 # a2 = a[0:5]
 # a = a1 + " " + a2
 # print(a)
 
-
+'''''
+2 option
+'''''
 # a = "Hello World"
 # a1 = "Hello"
 # a2 = "World"
@@ -298,13 +309,17 @@
 # a = a.replace("World",a1)
 # a = a.replace("Hello",a2,1)
 # print(a)
-
+'''''
+3 option
+'''''
 # a = "Hello World"
 # a1 = a[slice(0,5)]
 # a2 = a[slice(6,11)]
 # a3 = a2 + " " + a1
 # print(a3)
-
+'''''
+4 option
+'''''
 # a = input("Enter 2 words with space please: ")
 # a1 = a.find(' ')
 # print(a[a1+1:]+ a[a1] +a[:a1])
@@ -337,12 +352,16 @@
 # При решении этой задачи не стоит пользоваться циклами и
 # инструкцией if.
 
-
+'''''
+1 option
+'''''
 # a = input("Enter 2 words with space please: ")
 # b = a.split(' ')
 # c = b[1]+' '+ b[0]
 # print(c)
-
+'''''
+2 option
+'''''
 # a = input("Enter 2 words with space please: ")
 # i = a.index(' ')
 # c= a[i+1:]+' '+a[:i]
@@ -356,7 +375,9 @@
 # членов последовательности (не считая завершающего числа 0). Числа,
 # следующие за числом 0, считывать не нужно.
 
-
+'''''
+1 option
+'''''
 # x = int(input("Please enter your number: "))
 # numb = ""
 # count = 1
@@ -368,7 +389,9 @@
 #         print(numb)
 #         print(f"Total count are: {count}")
 
-
+'''''
+2 option
+'''''
 # x = int(input("Please enter your number: "))
 # if x <= 0:
 #     print("Number cant be lover then 0")
@@ -382,6 +405,11 @@
 # print(numb)
 # print(f"Total count are: {count}")
 
+'''''
+3 option
+'''''
+
+#
 # x = int(input("Please enter your 1 number: "))
 # y = int(input("Please enter your 2 number: "))
 # z = 0
@@ -437,8 +465,61 @@
 # 14.Переставьте соседние элементы списка (A[0] c A[1], A[2] c A[3] и т.
 # д.). Если элементов нечетное число, то последний элемент остается на
 # своем месте.
+
+# exam_list = [1,2,4,5,6,7,8,9,1,1,1,1,17]
+# count_list = 0
+# new_list = []
+# for count in exam_list:
+#     count_list += 1
+# if count_list %2 != 0:
+#     for i in range(1,len(exam_list)-1,2):
+#         exam_list[i - 1], exam_list[i] = exam_list[i], exam_list[i - 1]
+#     for j in exam_list:
+#         new_list.append(j)
+# elif count_list % 2 == 0:
+#     for i in range(1,len(exam_list),2):
+#         exam_list[i - 1], exam_list[i] = exam_list[i], exam_list[i - 1]
+#     for j in exam_list:
+#         new_list.append(j)
+#
+# print(count_list)
+# print(new_list)
+
+
+
+
+
+
 # 15.Дан список, упорядоченный по неубыванию элементов в нем.
 # Определите, сколько в нем различных элементов.
+
+
+# dif_list = [1,2,3,4,5,4,3,2,1,213,22,4,65,5,1,3,15,213]
+# a = (len(set(dif_list)))
+# b = (set(dif_list))
+# print(f"Total of different elements: {a}, and elements are: {b}")
+
+
+
+
+
+
+'''''
+Not correct
+'''''
+# dif_list = [1,2,3,4,5,4,3,2,1,213,22,4,65,5,1,3,15,213]
+# new_list =[]
+# for i in range(len(dif_list)):
+#     for x in range(i+1,len(dif_list)):
+#         if dif_list[i] != dif_list[x]:
+#             new_list.append(i)
+#             break
+#         else:
+#             new_list = new_list
+# print(new_list)
+
+
+
 # Работа с помощью Selenium.
 # Провести тест, с записью результатов.
 # Можно написать тест любого сайта, на котором есть регистрация и radio button,
