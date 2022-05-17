@@ -99,25 +99,24 @@ open_mail = WebDriverWait(driver, 60).until(
 open_mail.click()
 time.sleep(5)
 
-mail_accept = driver.find_element('xpath', main_page.mail_accept)
-mail_accept.click()
+
 
 driver.close()
 
 
-# enter_button = WebDriverWait(driver, 60).until(
-#     EC.element_to_be_clickable(
-#         (By.XPATH, main_page.enter_button)
-#     )
-# )
-# enter_button.click()
 
-#
-# user_sign_up = WebDriverWait(driver, 60).until(
-#     EC.element_to_be_clickable(
-#         (By.XPATH, main_page.user_sign_up)
-#     )
-# )
-# user_sign_up.click()
-# user_sign_up.send_keys("asdasd")
-# user_sign_up.send_keys("12312312")
+
+
+
+close_popup_wind = WebDriverWait(driver, 60).until(
+    EC.element_to_be_clickable(
+        (By.XPATH, main_page.close_popup_wind)
+    )
+)
+close_popup_wind.click()
+
+
+
+
+
+
