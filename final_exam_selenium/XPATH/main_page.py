@@ -1,6 +1,8 @@
 enter_button = '//div[@class="fake-header__sing-in-block"]/button[@type="button"][contains(text(),"Увійти")]'
 reg_button1 = '//button[@class="dp-btn red"][contains(text(),"Реєстрація")]'
 
+enter_button2 = '//button[contains(text(), "Увійти")]/following::button[contains(text(), "Увійти")]/following::button[contains(text(), "Увійти")]'
+
 log_line =   '//input[@placeholder="Логін"]'
 pass_line  =    '//input[@placeholder="Пароль"]'
 email_line =   '//input[@placeholder="Ваш email"]'
