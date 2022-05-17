@@ -46,7 +46,6 @@
 #     print(name, ":", adding / counter)
 
 
-
 # def f(x):
 #     if x == 0:
 #         return 0
@@ -200,5 +199,20 @@
 # if type(a) != str:
 #     print("hello")
 
-a , b = float(input()), float(input())
-c =print(round(a + b , 1))
+# a , b = float(input()), float(input())
+# c =print(round(a + b , 1))
+
+
+a = int(input("Леша вводит 1 цифру:"))
+b = int(input("Леша вводит 2 цифру:"))
+symb = str(input("Напиши символ:"))
+result = ""
+if symb == "+":
+    result = int(a) + int(b)
+if symb == "-":
+    result = int(a) - int(b)
+if symb == "*":
+    result = int(a) * int(b)
+if symb == "+":
+    result = int(a) / int(b)
+print(f"Это ответ на то что ввел Лёша:{result}")

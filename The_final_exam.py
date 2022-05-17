@@ -511,8 +511,8 @@ Not correct
 # new_list =[]
 # for i in range(len(dif_list)):
 #     for x in range(i+1,len(dif_list)):
-#         if dif_list[i] != dif_list[x]:
-#             new_list.append(i)
+#         if dif_list[i] == dif_list[x]:
+#             new_list.append (dif_list[i])
 #             break
 #         else:
 #             new_list = new_list
