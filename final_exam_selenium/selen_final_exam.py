@@ -50,7 +50,7 @@ temp_mail = WebDriverWait(driver, 60).until(
 )
 temp_mail.click()
 driver.switch_to.window((driver.window_handles[0]))
-time.sleep(10)
+time.sleep(5)
 
 reg_line_log = WebDriverWait(driver, 60).until(
     EC.element_to_be_clickable(
@@ -89,7 +89,7 @@ reg_button2 = WebDriverWait(driver, 60).until(
 reg_button2.click()
 
 driver.switch_to.window((driver.window_handles[-1]))
-time.sleep(10)
+time.sleep(5)
 
 open_mail = WebDriverWait(driver, 60).until(
     EC.element_to_be_clickable(
@@ -97,12 +97,9 @@ open_mail = WebDriverWait(driver, 60).until(
     )
 )
 open_mail.click()
+time.sleep(5)
 
-mail_accept = WebDriverWait(driver, 60).until(
-    EC.element_to_be_clickable(
-        (By.XPATH, main_page.mail_accept)
-    )
-)
+mail_accept = driver.find_element('xpath', main_page.mail_accept)
 mail_accept.click()
 
 driver.close()

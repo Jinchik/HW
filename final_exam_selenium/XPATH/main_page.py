@@ -16,7 +16,7 @@ reg_button2 = '//button[contains(text(), "Зареєструватись")]'
 
 
 temp_mail = '//input[@id="address"][@title="Ваш временный Email адрес, нажмите, чтобы cкопировать в буфер обмена!"]'
-mail_accept = '//a[contains(text(), "Підтвердити")]'
+mail_accept = '//a[contains(text(), "Підтвердити")][@rel="noopener noreferrer"]'
 
 
 open_mail = '//span[contains(text(), "noreply@dominos.ua")]'
